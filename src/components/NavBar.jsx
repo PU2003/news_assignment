@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+// The NavBar component renders the navigation bar for the FlashNews application.
 
 export class NavBar extends Component {
 
@@ -18,24 +19,27 @@ export class NavBar extends Component {
                 <a className="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
                 <li className="nav-item">
-                <a className="nav-link" href="#">About</a>
-                </li>
-                <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Topics
-                </a>
-                <ul className="dropdown-menu">
-                    <li><a className="dropdown-item" href="#">Action</a></li>
-                    <li><a className="dropdown-item" href="#">Another action</a></li>
-                    <li><hr className="dropdown-divider"/></li>
-                    <li><a className="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-                </li>
+                <a className="nav-link" href="#">About</a> </li>
+                
+                <li className="nav-item">
+                <a className="nav-link" href="business">Business</a></li>
+                <li className="nav-item">
+                <a className="nav-link" href="entertainment">Entertainment</a></li>
+                <li className="nav-item">
+                <a className="nav-link" href="general">General</a></li>
+                <li className="nav-item">
+                <a className="nav-link" href="health">Health</a></li>
+                <li className="nav-item">
+                <a className="nav-link" href="science">Science</a></li>
+                <li className="nav-item">
+                <a className="nav-link" href="sports">Sports</a></li>
+                <li className="nav-item">
+                <a className="nav-link" href="technology">Technology</a></li>
                 
             </ul>
-            <form className="d-flex" role="search">
-                <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                <button className="btn btn-outline-success" type="submit">Search</button>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+              <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
             </div>
         </div>

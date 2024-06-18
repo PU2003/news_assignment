@@ -35,6 +35,7 @@ export class News extends Component {
     // The componentDidMount fetches data from API and async will ensure that function returns a promise and await is used to wait 
     //  till the promise is resolved, once the promise 
     // is resolved and data is fetched,it will execute next instructions,otherwise it will wait till it is not resolved 
+    
 
     async componentDidMount(){
         
@@ -115,7 +116,9 @@ export class News extends Component {
             
         <div className='row'>
                {!this.state.loading && this.state.articles.map((element) => {return <div className='col-md-4' key={element.url}>
-                <NewsItem title={element.title?element.title:""} desc={element.description?element.description:""} imgurl={element.urlToImage?element.urlToImage:"https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb"} newsUrl={element.url}/>
+                <NewsItem title={element.title?element.title:""} desc={element.description?element.description:""} 
+                imgurl={element.urlToImage?element.urlToImage:"https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb"} 
+                newsUrl={element.url} author={element.author?element.author:"Unknown"} date={element.publishedAt} source={element.source.name}/>
             </div>})}
             
         </div>
